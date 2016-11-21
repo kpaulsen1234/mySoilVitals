@@ -1,18 +1,18 @@
+---
 applications:
-- name: waterconservation
+- name: streamsx-waterConservation-starterKit-soilvitals-1547
   services:
-  - Weather-Company-Data
-  - Streaming-Analytics
-  - Internet-of-Things-Platform
+    - Weather-Company-Data
+    - Streaming-Analytics
+    - Internet-of-Things-Platform
   disk_quota: 1024M
   buildpack: sdk-for-nodejs
   description: The Water Conservation App
-  domain: mybluemix.net
   path: nodejs
   command: npm start
   instances: 1
   memory: 512M
-
+  host: streamsx-waterConservation-starterKit-soilvitals-1547
 declared-services:
   Weather-Company-Data:
     label: weatherinsights
