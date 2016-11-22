@@ -123,7 +123,7 @@ class Main extends BaseComponent {
     return (
       <div>
         <AppBar
-          title={`Water Conservation v${process.env.npm_package_version}`} onLeftIconButtonTouchTap={this.handleMenuTap}
+          title={`SoilVitals v${process.env.npm_package_version}`} onLeftIconButtonTouchTap={this.handleMenuTap}
           iconElementRight={this.state.sab_status}
         />
         <LeftNav
